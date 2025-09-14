@@ -54,5 +54,29 @@ dependencies:
   flutter_riverpod: ^2.4.9
   http: ^1.1.0
   shared_preferences: ^2.2.2
-
   
+---
+
+## 📂 Project Structure
+
+lib/
+├── core/                  # Constants, utils, theming
+├── features/
+│   ├── auth/              # Authentication (login, signup, session)
+│   │   ├── data/          # Data sources & repositories
+│   │   ├── domain/        # Entities & use cases
+│   │   └── presentation/  # UI screens & providers
+│   │
+│   ├── products/          # Product listing & details
+│   │   ├── data/
+│   │   ├── domain/
+│   │   └── presentation/
+│   │
+│   └── profile/           # User profile & device info
+│       ├── data/
+│       ├── domain/
+│       └── presentation/
+│
+└── shared/
+    ├── services/          # API, persistence, method channel
+    └── widgets/           # Reusable UI components
