@@ -1,7 +1,7 @@
 class AppConstants {
   // API endpoints
   static const String baseUrl = 'https://api.escuelajs.co';
-  static const String productsEndpoint = '/api/v1/products';
+  static const String productsEndpoint = '$baseUrl/api/v1/products';
 
   // App info
   static const String appName = 'Immersive Commerce';
