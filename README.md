@@ -48,6 +48,17 @@ Implements product listing, detail view, authentication, favorites and native iO
 - **HTTP** (API requests)  
 - **MethodChannel** (native integration)  
 
+## 💡 Design Choices & Challenges
+
+- **Authentication:** Chose `SharedPreferences` for lightweight local session management instead of Firebase/Auth0 since no specific backend requirement was mentioned.  
+- **State Management:** Used **Riverpod** for simplicity, scalability, and testability.  
+- **Clean Architecture:** Ensures clear separation of concerns and easier maintainability.  
+- **Native Integration:** Implemented `MethodChannel` in both **Swift (iOS)** and **Kotlin (Android)** to fetch device-specific info.  
+- **Challenges Faced:**
+  - Handling session persistence consistently across Android and iOS (initial issue on iOS simulator).  
+  - Deciding between mock JSON vs API → finally integrated **Fake Store API** for realism.  
+  - Ensuring consistent UI across iOS and Android while using Material 3.  
+
 ### Dependencies
 ```yaml
 dependencies:
