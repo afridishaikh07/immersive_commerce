@@ -1,0 +1,58 @@
+# 🛍️ Immersive Commerce
+
+A modern Flutter e-commerce application built with **Clean Architecture**, **Riverpod state management**, and **Material 3 design**.  
+Implements product listing, detail view, authentication, favorites and native iOS/Android integration.
+
+---
+
+## 📹 Demo Video
+[▶ Watch the Demo](./video.mp4)
+
+*(GitHub does not autoplay `.mp4` — click the link above to view the video.)*
+
+---
+
+## ✨ Features
+
+### 🔐 Authentication
+- Sign up / login with email and password  
+- Session persistence using **SharedPreferences**  
+- Auto-navigation based on login state  
+- Logout option in profile  
+
+### 🛍️ Product Management
+- Product list fetched from [Fake Store API](https://api.escuelajs.co/api/v1/products/)  
+- Displays product name, price, and image  
+- Product details with description and price  
+- Responsive UI & smooth scrolling  
+
+### ❤️ Favorites
+- Add/remove favorites with a heart icon  
+- Managed using **Riverpod**  
+- Persisted across sessions  
+
+### 👤 Profile
+- View and update name & email  
+- Display device info from **Swift (iOS)** and **Kotlin (Android)** using **MethodChannel**  
+- Logout functionality  
+
+---
+
+## 🏗️ Tech Stack
+
+- **Flutter 3.x** (cross-platform UI)  
+- **Riverpod 2.x** (state management)  
+- **Material 3** (modern design system)  
+- **Clean Architecture** (separation of concerns)  
+- **SharedPreferences** (local storage)  
+- **HTTP** (API requests)  
+- **MethodChannel** (native integration)  
+
+### Dependencies
+```yaml
+dependencies:
+  flutter_riverpod: ^2.4.9
+  http: ^1.1.0
+  shared_preferences: ^2.2.2
+
+  
